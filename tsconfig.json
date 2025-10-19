@@ -2,16 +2,26 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "allowJs": true,          // <-- allow JS files
+    "checkJs": false,         // <-- don’t type-check JS files
+    "jsx": "react-jsx",       // <-- enable JSX
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "**/*.js",                // <-- include JS
+    "**/*.jsx",               // <-- include JSX
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "app/(tabs)/LandingPage.jsx",
+    "app/(tabs)/map.jsx",
+    "app/(tabs)/home2.jsx",
+    "app/(tabs)/DriverRegister.jsx",
+    "app/(tabs)/ind.jsx",
+    "app/(tabs)/StudentLogin.jsx",
+    "app/(tabs)/StudentRegister.jsx"
   ]
 }

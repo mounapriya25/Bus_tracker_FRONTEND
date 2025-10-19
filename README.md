@@ -48,3 +48,21 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+----------------mydocumnet-----------
+1️⃣ app/
+
+This is the main folder for routing and screens — Expo Router automatically uses it like “pages” in Next.js.
+
+app/_layout.tsx → The root layout of your app (like a global wrapper, navigation container, etc.)
+
+app/(tabs)/_layout.tsx → Layout for all screens inside the (tabs) group. This defines your Tab Navigator.
+
+app/(tabs)/home.tsx, explore.tsx, modal.tsx, etc. → These are individual screens (like pages).
+
+Then, inside the (tabs) folder:
+
+index.tsx → Usually your default home tab screen.
+
+home.tsx, explore.tsx, etc. → Other tabs/screens shown from bottom tab navigation.
